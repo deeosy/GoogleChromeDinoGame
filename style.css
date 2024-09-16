@@ -1,0 +1,19 @@
+#stone{
+  animation: stone 1.33s infinite;
+}
+
+@keyframes stone {
+  0%{left: 540px;}
+  100%{left: -60px;}
+}
+
+.jump-animation{
+  animation: jump 0.5s ;
+}
+
+@keyframes jump {
+  0%{top: 200px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 200px;}
+}

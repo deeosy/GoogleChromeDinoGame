@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <title>Google Chrome Dino Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#004741', greenText: '#00A99D', grayBG: '#F0F0F0', blackText: "#00100B",
+          },
+          keyframes: {
+
+          }
+        },
+        }
+      }
+  </script>
+
+</head>
+<body>
+  <div id="game" class="border-[2px] border-black w-[600px] h-[300px] mx-auto relative overflow-hidden mt-[100px]">
+    <img src="https://as2.ftcdn.net/v2/jpg/01/46/03/31/1000_F_146033193_K3poVK6PmEHrepqbZD2gwfmm6ma0XAdh.jpg" alt="" class=" object-contain h-[100%] w-[100%] scale-110 absolute left-0">
+
+    <img src="https://static.thenounproject.com/png/3907595-200.png" alt="" class="h-[100px] w-[100px] relative top-[200px]" id="dino">
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/019/527/056/small_2x/an-8-bit-retro-styled-pixel-art-illustration-of-a-stone-rock-free-png.png" alt="" class="h-[60px] w-[60px] relative top-[140px] left-[540px]" id="stone">
+
+  </div>
+  <h1 id="score" class="text-[28px] text-center">0</h1>
+ 
+  <script src="./main.js"></script>
+</body>
+</html>
